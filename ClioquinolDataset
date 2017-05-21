@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[3]:
-
 #GET ROW DATA AND CALCULATE CORRELATION MATRIX
 
 from pandas import *
@@ -36,7 +31,6 @@ matriucorrelacio.index = [genename]
 matriucorrelacio
 
 
-# In[4]:
 
 #ACO MODIFIED (ACOGeneInteraction): It have been used increasing 'times' sequentially (from 1 to 20)
 
@@ -53,7 +47,6 @@ print(solution.tour) #List of nodes visited in order
 print(solution.distance) #Distance value of the complete optimal tour, we are not interested in this value.
 
 
-# In[5]:
 
 #DATAFRAME WITH ALL THE PREDICTED INTERACTIONS ('times' = 1,..,20)
 df = pandas.DataFrame()
@@ -120,11 +113,6 @@ df['time1'] = time1['0'] + '-'+ time1['1']
 df.head()
 
 
-# PLOT:
-# Number of gene interactions predicted using different 'times'.
-
-# In[6]:
-
 #GRAPH NUMBER OF INTERACTIONS PREDICTED USING DIFFERENT 'times'
 import matplotlib.pyplot as plt
 f = plt.figure()
@@ -138,7 +126,6 @@ plt.ylabel('Number of interactions')
 plt.show()
 
 
-# In[7]:
 
 #LIST NUMBER OF DIFFERENT INTERACTIONS PREDICTED SO FAR USING DIFFERENT 'times'
 alltheinteractions1 = list(df['time1'])
@@ -183,8 +170,6 @@ print('Number of different interactions 1-19:',len(set(alltheinteractions19)))
 print('Number of different interactions 1-20:',len(set(alltheinteractions20)))
 
 
-# In[8]:
-
 #GRAPH NUMBER OF DIFFERENT INTERACTIONS PREDICTED USING 'times' SEQUENTIALLY (1,..,20)
 import matplotlib.pyplot as plt
 import matplotlib.patheffects as path_effects
@@ -211,8 +196,6 @@ plt.annotate('max = 291', xy=(19, 291), xytext=(12, 210),
             )
 plt.show()
 
-
-# In[9]:
 
 #DATAFRAME INTERACTIONS PREDICTED SORTED BY HOW MANY TIMES THEY APPEAR WHEN RUNNING ACOGeneInteraction USING DIFFERENT 'times'
 from collections import Counter
@@ -258,8 +241,6 @@ data4['Description2'] = description2
 data4
 
 
-# In[10]:
-
 #NUMBER OF INTERACTIONS PREDICTED FOR EACH GENE (Genes with more interactions are more likely to have a more central role in the network)
 from collections import Counter
 data4
@@ -276,8 +257,6 @@ data6['Description'] = description1
 data6
 
 
-# In[12]:
-
 #COMPARING KEY GENES USING ACO-TSP AND ACOGeneInteraction
 keygensTSP = time1[['0','1']]
 keygensTSP
@@ -292,8 +271,6 @@ listtotal = list(compKG['keygenesTSP']) + list(compKG['keygenesGI'])
 listtotalsorted = DataFrame(Counter(listtotal).most_common())
 listtotalsorted ##interactions that appear 2 times in the list are interactions share with keyinteractions ACOTSP and ACOGI, the others are inetarctions no shared
 
-
-# In[ ]:
 
 
 
