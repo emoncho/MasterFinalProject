@@ -1,7 +1,4 @@
-
-# coding: utf-8
-
-# In[5]:
+#PREDICTION OF GENE INTERACTIONS USING 'FASTING' DATASET (https://www.ncbi.nlm.nih.gov/sites/GDSbrowser / GDS5473: Short-term fasting effect on skeletal muscle: time course)
 
 #GET ROW DATA AND CALCULATE CORRELATION MATRIX
 
@@ -32,8 +29,6 @@ matriucorrelacio.columns = [fast100.index]
 matriucorrelacio.head()                                          #correlation matrix
 
 
-# In[21]:
-
 #ACO MODIFIED (ACOGeneInteraction): It have been used increasing 'times' sequentially (from 1 to 20)
 from ACOGeneInteraction import *
 world1 = WorldGI(matriucorrelacio, times = 1)#Input is a correlation matrix. It also has a 'times' parameters to choose how many times each nodes is visited.
@@ -48,7 +43,6 @@ print(solution.tour) #List of nodes visited in order
 print(solution.distance) #Distance value of the complete optimal tour, we are not interested in this value.
 
 
-# In[6]:
 
 #DATAFRAME WITH ALL THE PREDICTED INTERACTIONS ('times' = 1,..,20)
 df = pandas.DataFrame() 
@@ -115,8 +109,6 @@ df['time1'] = time1['Gen1'] + '_'+ time1['Gen2']
 df
 
 
-# In[7]:
-
 #GRAPH NUMBER OF INTERACTIONS PREDICTED USING DIFFERENT 'times'
 import matplotlib.pyplot as plt
 f = plt.figure()
@@ -130,7 +122,6 @@ plt.ylabel('Number of interactions')
 plt.show()
 
 
-# In[8]:
 
 #LIST NUMBER OF DIFFERENT INTERACTIONS PREDICTED SO FAR USING DIFFERENT 'times'
 alltheinteractions1 = list(df['time1'])
@@ -175,7 +166,6 @@ print('Number of different interactions 1-19:',len(set(alltheinteractions19)))
 print('Number of different interactions 1-20:',len(set(alltheinteractions20)))
 
 
-# In[8]:
 
 #GRAPH NUMBER OF DIFFERENT INTERACTIONS PREDICTED USING 'times' SEQUENTIALLY (1,..,20)
 import matplotlib.pyplot as plt
@@ -197,8 +187,6 @@ plt.xlabel('times = n ')
 plt.ylabel('Different interactions predicted')
 plt.show()
 
-
-# In[9]:
 
 #DATAFRAME INTERACTIONS PREDICTED SORTED BY HOW MANY TIMES THEY APPEAR WHEN RUNNING ACOGeneInteraction USING DIFFERENT 'times'
 from collections import Counter
@@ -237,8 +225,6 @@ data4['Description2'] = description2
 data4                                # gens interactions: nome of Gene1 and Gene2, plus a short escription of each gene
 
 
-# In[10]:
-
 #NUMBER OF INTERACTIONS PREDICTED FOR EACH GENE (Genes with more interactions are more likely to have a more central role in the network)
 data4
 data5 = [data4['Gene1'],data4['Gene2']]
@@ -254,7 +240,6 @@ data6['Description'] = description1
 data6
 
 
-# In[14]:
 
 #COMPARING KEY GENES USING ACO-TSP AND ACOGeneInteraction
 keygensTSP = time1[['Gen1','Gen2']]
@@ -274,13 +259,6 @@ listtotal
 listtotalsorted = DataFrame(Counter(listtotal).most_common())
 listtotalsorted ##interactions that appear 2 times in the list are interactions share with keyinteractions ACOTSP and ACOGI, the others are inetarctions no shared
 
-
-# In[ ]:
-
-
-
-
-# In[ ]:
 
 
 
