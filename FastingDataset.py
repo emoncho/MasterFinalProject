@@ -47,7 +47,6 @@ print(solution.distance) #Distance value of the complete optimal tour, we are no
 #DATAFRAME WITH ALL THE PREDICTED INTERACTIONS ('times' = 1,..,20)
 files = [str(i) + 'time' for i in reversed(range(1, 21))]
 pieces = []
-    # much faster to start with empty list than empty DataFrame
 
 for file in files:
     path = 'Fasting/times/%s.csv' % file
