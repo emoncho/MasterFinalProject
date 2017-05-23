@@ -144,7 +144,7 @@ class Ant:
             self.start = start
         self.distance = 0
         self.visited = [self.start]
-        self.unvisited = [n for n in self.world.nodes * self.world.times]
+        self.unvisited = [n for n in self.world.nodes if n != self.start] + (self.world.times-1)*[n for n in self.world.nodes]
         self.traveled = []
         return self
 
