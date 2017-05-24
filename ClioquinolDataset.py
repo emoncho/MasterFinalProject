@@ -49,23 +49,73 @@ print(solution.distance) #Distance value of the complete optimal tour, we are no
 
 
 #DATAFRAME WITH ALL THE PREDICTED INTERACTIONS ('times' = 1,..,20)
-files = [str(i) + 'time' for i in reversed(range(1, 21))]
-pieces = []
-
-for file in files:
-    path = 'Clioquinol/times/%s.csv' % file
-    frame = pandas.read_csv(path, index_col=0, header=0)
-    pieces.append(frame['0'] + '_' + frame['1'])
-
-pieces
-df = pandas.concat(pieces, axis=1)
-df.columns = [files]
-df
+df = pandas.DataFrame()
+file20 = os.path.abspath('Clioquinol/times/20time.csv')
+time20 = pandas.read_csv(file20, index_col=0, header=0)
+df['time20'] = time20['0'] +'-'+ time20['1']
+file19 = os.path.abspath('Clioquinol/times/19time.csv')
+time19 = pandas.read_csv(file19, index_col=0, header=0)
+df['time19'] = time19['0'] +'-'+ time19['1']
+file18 = os.path.abspath('Clioquinol/times/18time.csv')
+time18 = pandas.read_csv(file18, index_col=0, header=0)
+df['time18'] = time18['0'] +'-'+ time18['1']
+file17 = os.path.abspath('Clioquinol/times/17time.csv')
+time17 = pandas.read_csv(file17, index_col=0, header=0)
+df['time17'] = time17['0'] +'-'+ time17['1']
+file16 = os.path.abspath('Clioquinol/times/16time.csv')
+time16 = pandas.read_csv(file16, index_col=0, header=0)
+df['time16'] = time16['0'] +'-'+ time16['1']
+file15 = os.path.abspath('Clioquinol/times/15time.csv')
+time15 = pandas.read_csv(file15, index_col=0, header=0)
+df['time15'] = time15['0'] +'-'+ time15['1']
+file14 = os.path.abspath('Clioquinol/times/14time.csv')
+time14 = pandas.read_csv(file14, index_col=0, header=0)
+df['time14'] = time14['0'] +'-'+ time14['1']
+file13 = os.path.abspath('Clioquinol/times/13time.csv')
+time13 = pandas.read_csv(file13, index_col=0, header=0)
+df['time13'] = time13['0'] +'-'+ time13['1']
+file12 = os.path.abspath('Clioquinol/times/12time.csv')
+time12 = pandas.read_csv(file12, index_col=0, header=0)
+df['time12'] = time12['0'] +'-'+ time12['1']
+file11 = os.path.abspath('Clioquinol/times/11time.csv')
+time11 = pandas.read_csv(file11, index_col=0, header=0)
+df['time11'] = time11['0'] +'-'+ time11['1']
+file10 = os.path.abspath('Clioquinol/times/10time.csv')
+time10 = pandas.read_csv(file10, index_col=0, header=0)
+df['time10'] = time10['0'] +'-'+ time10['1']
+file9 = os.path.abspath('Clioquinol/times/9time.csv')
+time9 = pandas.read_csv(file9, index_col=0, header=0)
+df['time9'] = time9['0'] +'-'+ time9['1']
+file8 = os.path.abspath('Clioquinol/times/8time.csv')
+time8 = pandas.read_csv(file8, index_col=0, header=0)
+df['time8'] = time8['0'] +'-'+ time8['1']
+file7 = os.path.abspath('Clioquinol/times/7time.csv')
+time7 = pandas.read_csv(file7, index_col=0, header=0)
+df['time7'] = time7['0'] + '-'+ time7['1']
+file6 = os.path.abspath('Clioquinol/times/6time.csv')
+time6 = pandas.read_csv(file6, index_col=0, header=0)
+df['time6'] = time6['0'] +'-'+ time6['1']
+file5 = os.path.abspath('Clioquinol/times/5time.csv')
+time5 = pandas.read_csv(file5, index_col=0, header=0)
+df['time5'] = time5['0'] +'-'+ time5['1']
+file4 = os.path.abspath('Clioquinol/times/4time.csv')
+time4 = pandas.read_csv(file4, index_col=0, header=0)
+df['time4'] = time4['0'] +'-'+ time4['1']
+file3 = os.path.abspath('Clioquinol/times/3time.csv')
+time3 = pandas.read_csv(file3, index_col=0, header=0)
+df['time3'] = time3['0'] +'-'+ time3['1']
+file2 = os.path.abspath('Clioquinol/times/2time.csv')
+time2 = pandas.read_csv(file2, index_col=0, header=0)
+df['time2'] = time2['0'] +'-'+ time2['1']
+file1 = os.path.abspath('Clioquinol/times/1time.csv')
+time1 = pandas.read_csv(file1, index_col=0, header=0)
+df['time1'] = time1['0'] + '-'+ time1['1']
+df.head()
 
 #GRAPH NUMBER OF INTERACTIONS PREDICTED USING DIFFERENT 'times'
 import matplotlib.pyplot as plt
 f = plt.figure()
-plt.plot([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], 
+plt.plot(list(range(1,21), 
          [len(time1), len(time2),len(time3), len(time4),len(time5),len(time6),len(time7),
           len(time8),len(time9), len(time10),len(time11), len(time12), len(time13), len(time14),
           len(time15), len(time16), len(time17),len(time18), len(time19), len(time20)],'ro')
@@ -124,10 +174,10 @@ import matplotlib.pyplot as plt
 import matplotlib.patheffects as path_effects
 
 f = plt.figure()
-plt.plot([20,19,18,17,16,15,14,13, 12,11,10,9,8,7,6,5,4,3,2,1], 
-         [len(set(alltheinteractions20)),len(set(alltheinteractions19)),
-          len(set(alltheinteractions18)),
-        len(set(alltheinteractions17)),len(set(alltheinteractions16)),
+plt.plot(list(reversed(range(1, 21))), 
+         [len(set(alltheinteractions20)),
+          len(set(alltheinteractions19)),len(set(alltheinteractions18)),
+          len(set(alltheinteractions17)),len(set(alltheinteractions16)),
           len(set(alltheinteractions15)),len(set(alltheinteractions14)),
           len(set(alltheinteractions13)),len(set(alltheinteractions12)),
           len(set(alltheinteractions11)),len(set(alltheinteractions10)),
@@ -152,7 +202,7 @@ Counter(alltheinteractions17)
 data = DataFrame(Counter(alltheinteractions20).most_common())
 data2 = data.ix[1:]
 data3 = data2[0].str.split('-')
-filenomgens = os.path.abspath('Clioquinol/gensclioquinolcodi.csv')
+filenomgens = os.path.abspath('Clioquinol/CQgenedata.csv')
 nomgens = pandas.read_csv(filenomgens,index_col=1, header=None)
 nomgens
 col1 =[]
