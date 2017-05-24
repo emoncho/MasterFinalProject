@@ -7,14 +7,14 @@ import itertools
 from sklearn.preprocessing import Normalizer
 import os
 
-file = os.path.abspath('Clioquinol/clioquinoldata.csv')
+file = os.path.abspath('Clioquinol/CQexpressiondata.csv')  #expression data
 matr = pandas.read_csv(file, index_col=0, header=None)
 df1 = matr.T
 df2 = np.log2(df1)                              #log2 transformation
 normalizeddf2 = Normalizer().fit_transform(df2) #normalization(-1,1)
 
 matriucorrelacio = pandas.DataFrame(normalizeddf2).corr(method='pearson')
-nomgensfile = os.path.abspath('Clioquinol/gensclioquinolcodi.csv')
+nomgensfile = os.path.abspath('Clioquinol/CQgenedata.csv')
 nomgens = pandas.read_csv(nomgensfile, index_col=1, header=None)
 gens100 = DataFrame(list(matr.index))
 genename =[]
