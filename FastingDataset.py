@@ -9,10 +9,10 @@ import itertools
 from sklearn.preprocessing import Normalizer
 import os
 
-filefast100 = os.path.abspath('Fasting/fasting100gens.csv')   #ID from 100 first gens
+filefast100 = os.path.abspath('Fasting/100genesID.csv')   #ID from 100 first gens
 fast100 = pandas.read_csv(filefast100, header=None, index_col=0)
     
-filefast = os.path.abspath("Fasting/fasting.csv")             #genetic expression info all the genes
+filefast = os.path.abspath("Fasting/FAexpressiondata.csv")             #genetic expression info all the genes
 fast = pandas.read_csv(filefast, index_col = 0)
 
 complet100 = fast[fast.index.isin(list(fast100.index))]       #genetic expression info 100 first genes 
@@ -45,23 +45,74 @@ print(solution.distance) #Distance value of the complete optimal tour, we are no
 
 
 #DATAFRAME WITH ALL THE PREDICTED INTERACTIONS ('times' = 1,..,20)
-files = [str(i) + 'time' for i in reversed(range(1, 21))]
-pieces = []
-
-for file in files:
-    path = 'Fasting/times/%s.csv' % file
-    frame = pandas.read_csv(path, index_col=0, header=0)
-    pieces.append(frame['Gen1'] + '_' + frame['Gen2'])
-
-df = pandas.concat(pieces, axis=1)
-df.columns = [files]
+df = pandas.DataFrame() 
+file20 = os.path.abspath('Fasting/times/20timeFA.csv')
+time20 = pandas.read_csv(file20, index_col=0, header=0)
+df['time20'] = time20['Gen1'] + '_'+ time20['Gen2']
+file19 = os.path.abspath('Fasting/times/19timeFA.csv')
+time19 = pandas.read_csv(file19, index_col=0, header=0)
+df['time19'] = time19['Gen1'] + '_'+ time19['Gen2']
+file18 = os.path.abspath('Fasting/times/18timeFA.csv')
+time18 = pandas.read_csv(file18, index_col=0, header=0)
+df['time18'] = time18['Gen1'] + '_'+ time18['Gen2']
+file17 = os.path.abspath('Fasting/times/17timeFA.csv')
+time17 = pandas.read_csv(file17, index_col=0, header=0)
+df['time17'] = time17['Gen1'] + '_'+ time17['Gen2']
+file16 = os.path.abspath('Fasting/times/16timeFA.csv')
+time16 = pandas.read_csv(file16, index_col=0, header=0)
+df['time16'] = time16['Gen1'] + '_'+ time16['Gen2']
+file15 = os.path.abspath('Fasting/times/15timeFA.csv')
+time15 = pandas.read_csv(file15, index_col=0, header=0)
+df['time15'] = time15['Gen1'] + '_'+ time15['Gen2']
+file14 = os.path.abspath('Fasting/times/14timeFA.csv')
+time14 = pandas.read_csv(file14, index_col=0, header=0)
+df['time14'] = time14['Gen1'] + '_'+ time14['Gen2']
+file13 = os.path.abspath('Fasting/times/13timeFA.csv')
+time13 = pandas.read_csv(file13, index_col=0, header=0)
+df['time13'] = time13['Gen1'] + '_'+ time13['Gen2']
+file12 = os.path.abspath('Fasting/times/12timeFA.csv')
+time12 = pandas.read_csv(file12, index_col=0, header=0)
+df['time12'] = time12['Gen1'] + '_'+ time12['Gen2']
+file11 = os.path.abspath('Fasting/times/11timeFA.csv')
+time11 = pandas.read_csv(file11, index_col=0, header=0)
+df['time11'] = time11['Gen1'] + '_'+ time11['Gen2']
+file10 = os.path.abspath('Fasting/times/10timeFA.csv')
+time10 = pandas.read_csv(file10, index_col=0, header=0)
+df['time10'] = time10['Gen1'] + '_'+ time10['Gen2']
+file9 = os.path.abspath('Fasting/times/9timeFA.csv')
+time9 = pandas.read_csv(file9, index_col=0, header=0)
+df['time9'] = time9['Gen1'] + '_'+ time9['Gen2']
+file8 = os.path.abspath('Fasting/times/8timeFA.csv')
+time8 = pandas.read_csv(file8, index_col=0, header=0)
+df['time8'] = time8['Gen1'] + '_'+ time8['Gen2']
+file7 = os.path.abspath('Fasting/times/7timeFA.csv')
+time7 = pandas.read_csv(file7, index_col=0, header=0)
+df['time7'] = time7['Gen1'] + '_'+ time7['Gen2']
+file6 = os.path.abspath('Fasting/times/6timeFA.csv')
+time6 = pandas.read_csv(file6, index_col=0, header=0)
+df['time6'] = time6['Gen1'] + '_'+ time6['Gen2']
+file5 = os.path.abspath('Fasting/times/5timeFA.csv')
+time5 = pandas.read_csv(file5, index_col=0, header=0)
+df['time5'] = time5['Gen1'] + '_'+ time5['Gen2']
+file4 = os.path.abspath('Fasting/times/4timeFA.csv')
+time4 = pandas.read_csv(file4, index_col=0, header=0)
+df['time4'] = time4['Gen1'] + '_'+ time4['Gen2']
+file3 = os.path.abspath('Fasting/times/3timeFA.csv')
+time3 = pandas.read_csv(file3, index_col=0, header=0)
+df['time3'] = time3['Gen1'] + '_'+ time3['Gen2']
+file2 = os.path.abspath('Fasting/times/2timeFA.csv')
+time2 = pandas.read_csv(file2, index_col=0, header=0)
+df['time2'] = time2['Gen1'] + '_'+ time2['Gen2']
+file1 = os.path.abspath('Fasting/times/1timeFA.csv')
+time1 = pandas.read_csv(file1, index_col=0, header=0)
+df['time1'] = time1['Gen1'] + '_'+ time1['Gen2']
 df
 
 
 #GRAPH NUMBER OF INTERACTIONS PREDICTED USING DIFFERENT 'times'
 import matplotlib.pyplot as plt
 f = plt.figure()
-plt.plot([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], 
+plt.plot(list(range(1,21)), 
          [len(time1), len(time2),len(time3), len(time4),len(time5),len(time6),len(time7),
           len(time8),len(time9),len(time10),len(time11), len(time12), len(time13), len(time14),
           len(time15), len(time16), len(time17),len(time18), len(time19), len(time20)],'ro')
@@ -119,7 +170,7 @@ print('Number of different interactions 1-20:',len(set(alltheinteractions20)))
 #GRAPH NUMBER OF DIFFERENT INTERACTIONS PREDICTED USING 'times' SEQUENTIALLY (1,..,20)
 import matplotlib.pyplot as plt
 f = plt.figure()
-plt.plot([20,19,18,17,16,15,14,13, 12,11,10,9,8,7,6,5,4,3,2,1], 
+plt.plot(list(reversed(range(1, 21))), 
          [len(set(alltheinteractions20)),
           len(set(alltheinteractions19)),len(set(alltheinteractions18)),
           len(set(alltheinteractions17)),len(set(alltheinteractions16)),
@@ -145,7 +196,7 @@ data2 = data.ix[1:]
 data3 = data2[0].str.split('_')
 data3
 
-filenomgens = os.path.abspath('Fasting/gens200.csv')               #all the infor from 200 gens (among them there are the 100 gens we are working with)
+filenomgens = os.path.abspath('Fasting/FAgenesdata.csv')               #all the infor from 200 gens (among them there are the 100 gens we are working with)
 nomgens = pandas.read_csv(filenomgens,index_col=7, header=None)
 nomgens
 
