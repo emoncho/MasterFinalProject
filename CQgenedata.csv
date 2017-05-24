@@ -1,0 +1,100 @@
+﻿0,1777371_at,,GDE1,"Glycerophosphocholine (GroPCho) phosphodiesterase; hydrolyzes GroPCho to choline and glycerolphosphate, for use as a phosphate source and as a precursor for phosphocholine synthesis; may interact with ribosomes"
+1,1779407_at,,ANB1,"Translation initiation factor eIF-5A, promotes formation of the first peptide bond; similar to and functionally redundant with Hyp2p; undergoes an essential hypusination modification; expressed under anaerobic conditions"
+2,1779112_at,,HEM13,"Coproporphyrinogen III oxidase, an oxygen requiring enzyme that catalyzes the sixth step in the heme biosynthetic pathway; localizes to the mitochondrial inner membrane; transcription is repressed by oxygen and heme (via Rox1p and Hap1p)"
+3,1775734_at,,CTR1,"High-affinity copper transporter of the plasma membrane, mediates nearly all copper uptake under low copper conditions; transcriptionally induced at low copper levels and degraded at high copper levels"
+4,1773900_at,,ILV3,"Dihydroxyacid dehydratase, catalyzes third step in the common pathway leading to biosynthesis of branched-chain amino acids"
+5,1773710_at,,0,0
+6,1772726_at,,VMR1,"Protein of unknown function that may interact with ribosomes, based on co-purification experiments; member of the ATP-binding cassette (ABC) family; potential Cdc28p substrate; detected in purified mitochondria in high-throughput studies"
+7,1774074_s_at,,VBA3 /// VBA5,Permease of basic amino acids in the vacuolar membrane /// Putative transporter of the Major Facilitator Superfamily (MFS); proposed role as a basic amino acid permease based on phylogeny
+8,1779517_at,,MCH2,"Protein with similarity to mammalian monocarboxylate permeases, which are involved in transport of monocarboxylic acids across the plasma membrane; mutant is not deficient in monocarboxylate transport"
+9,1773278_at,,ARN1,"Transporter, member of the ARN family of transporters that specifically recognize siderophore-iron chelates; responsible for uptake of iron bound to ferrirubin, ferrirhodin, and related siderophores"
+10,1778591_at,,AGA1,"Anchorage subunit of a-agglutinin of a-cells, highly O-glycosylated protein with N-terminal secretion signal and C-terminal signal for addition of GPI anchor to cell wall, linked to adhesion subunit Aga2p via two disulfide bonds"
+11,1778666_at,,HXT5,"Hexose transporter with moderate affinity for glucose, induced in the presence of non-fermentable carbon sources, induced by a decrease in growth rate, contains an extended N-terminal domain relative to other HXTs"
+12,1776679_at,,ARN2,"Transporter, member of the ARN family of transporters that specifically recognize siderophore-iron chelates; responsible for uptake of iron bound to the siderophore triacetylfusarinine C"
+13,1772622_at,,SIT1,"Ferrioxamine B transporter, member of the ARN family of transporters that specifically recognize siderophore-iron chelates; transcription is induced during iron deprivation and diauxic shift; potentially phosphorylated by Cdc28p"
+14,1771091_at,,DAN1,"Cell wall mannoprotein with similarity to Tir1p, Tir2p, Tir3p, and Tir4p; expressed under anaerobic conditions, completely repressed during aerobic growth"
+15,1771341_at,,ZPS1,"Putative GPI-anchored protein; transcription is induced under low-zinc conditions, as mediated by the Zap1p transcription factor, and at alkaline pH"
+16,1779129_at,,INO1,"Inositol 1-phosphate synthase, involved in synthesis of inositol phosphates and inositol-containing phospholipids; transcription is coregulated with other phospholipid biosynthetic genes by Ino2p and Ino4p, which bind the UASINO DNA element"
+17,1778375_at,,TIS11,mRNA-binding protein expressed during iron starvation; binds to a sequence element in the 3'-untranslated regions of specific mRNAs to mediate their degradation; involved in iron homeostasis
+18,1777881_at,,YKE4,"Zinc transporter; localizes to the ER; null mutant is sensitive to calcofluor white, leads to zinc accumulation in cytosol; ortholog of the mouse KE4 and member of the ZIP (ZRT, IRT-like Protein) family"
+19,1769853_at,,PCA1,"Cadmium transporting P-type ATPase; may also have a role in copper and iron homeostasis; stabilized by Cd binding, which prevents ubiquitination; S288C and other lab strains contain a G970R mutation which eliminates Cd transport function"
+20,1780053_at,,ICY1,"Protein of unknown function, required for viability in rich media of cells lacking mitochondrial DNA; mutants have an invasive growth defect with elongated morphology; induced by amino acid starvation"
+21,1780031_at,,DFG5,"Putative mannosidase, essential glycosylphosphatidylinositol (GPI)-anchored membrane protein required for cell wall biogenesis in bud formation, involved in filamentous growth, homologous to Dcw1p"
+22,1779659_at,,0,0
+23,1778651_at,,FAA4,"Long chain fatty acyl-CoA synthetase, regulates protein modification during growth in the presence of ethanol, functions to incorporate palmitic acid into phospholipids and neutral lipids"
+24,1780091_at,,PDR12,"Plasma membrane ATP-binding cassette (ABC) transporter, weak-acid-inducible multidrug transporter required for weak organic acid resistance; induced by sorbate and benzoate and regulated by War1p; mutants exhibit sorbate hypersensitivity"
+25,1773702_at,,0,0
+26,1779134_at,,SUR7,"Putative integral membrane protein; component of eisosomes; associated with endocytosis, along with Pil1p and Lsp1p; sporulation and plasma membrane sphingolipid content are altered in mutants"
+27,1778720_at,,AHA1,Co-chaperone that binds to Hsp82p and activates its ATPase activity; similar to Hch1p; expression is regulated by stresses such as heat shock
+28,1770767_at,,AGX1,"Alanine:glyoxylate aminotransferase (AGT), catalyzes the synthesis of glycine from glyoxylate, which is one of three pathways for glycine biosynthesis in yeast; has similarity to mammalian and plant alanine:glyoxylate aminotransferases"
+29,1778446_at,,0,0
+30,1778183_at,,PDR10,"ATP-binding cassette (ABC) transporter, multidrug transporter involved in the pleiotropic drug resistance network; regulated by Pdr1p and Pdr3p"
+31,1772350_at,,ERG1,"Squalene epoxidase, catalyzes the epoxidation of squalene to 2,3-oxidosqualene; plays an essential role in the ergosterol-biosynthesis pathway and is the specific target of the antifungal drug terbinafine"
+32,1772997_at,,GRE2,"3-methylbutanal reductase and NADPH-dependent methylglyoxal reductase (D-lactaldehyde dehydrogenase); stress induced (osmotic, ionic, oxidative, heat shock and heavy metals); regulated by the HOG pathway"
+33,1770480_at,,GAP1,General amino acid permease; localization to the plasma membrane is regulated by nitrogen source
+34,1774829_at,,TIR3,Cell wall mannoprotein of the Srp1p/Tip1p family of serine-alanine-rich proteins; expressed under anaerobic conditions and required for anaerobic growth
+35,1777315_at,,0,0
+36,1778568_at,,CHS1,"Chitin synthase I, requires activation from zymogenic form in order to catalyze the transfer of N-acetylglucosamine (GlcNAc) to chitin; required for repairing the chitin septum during cytokinesis; transcription activated by mating factor"
+37,1773699_at,,PHM7,"Protein of unknown function, expression is regulated by phosphate levels; green fluorescent protein (GFP)-fusion protein localizes to the cell periphery and vacuole"
+38,1775399_at,,BAP2,"High-affinity leucine permease, functions as a branched-chain amino acid permease involved in the uptake of leucine, isoleucine and valine; contains 12 predicted transmembrane domains"
+39,1771498_at,,AMS1,"Vacuolar alpha mannosidase, involved in free oligosaccharide (fOS) degradation; delivered to the vacuole in a novel pathway separate from the secretory pathway"
+40,1778053_at,,YRO2,"Putative protein of unknown function; the authentic, non-tagged protein is detected in a phosphorylated state in highly purified mitochondria in high-throughput studies; transcriptionally regulated by Haa1p"
+41,1779682_at,,URA2,"Bifunctional carbamoylphosphate synthetase (CPSase)-aspartate transcarbamylase (ATCase), catalyzes the first two enzymatic steps in the de novo biosynthesis of pyrimidines; both activities are subject to feedback inhibition by UTP"
+42,1777843_at,,PIS1,"Phosphatidylinositol synthase, required for biosynthesis of phosphatidylinositol, which is a precursor for polyphosphoinositides, sphingolipids, and glycolipid anchors for some of the plasma membrane proteins"
+43,1777253_at,,WTM1,"Transcriptional modulator involved in regulation of meiosis, silencing, and expression of RNR genes; required for nuclear localization of the ribonucleotide reductase small subunit Rnr2p and Rnr4p; contains WD repeats"
+44,1776427_at,,ZWF1,"Glucose-6-phosphate dehydrogenase (G6PD), catalyzes the first step of the pentose phosphate pathway; involved in adapting to oxidatve stress; homolog of the human G6PD which is deficient in patients with hemolytic anemia"
+45,1771986_at,,0,0
+46,1771509_at,,OLE1,"Delta(9) fatty acid desaturase, required for monounsaturated fatty acid synthesis and for normal distribution of mitochondria"
+47,1769455_at,,CTS1,"Endochitinase, required for cell separation after mitosis; transcriptional activation during the G1 phase of the cell cycle is mediated by transcription factor Ace2p"
+48,1779789_at,,PDR5,"Plasma membrane ATP-binding cassette (ABC) transporter, multidrug transporter actively regulated by Pdr1p; also involved in steroid transport, cation resistance, and cellular detoxification during exponential growth"
+49,1777334_at,,SDH3,"Cytochrome b subunit of succinate dehydrogenase (Sdh1p, Sdh2p, Sdh3p, Sdh4p), which couples the oxidation of succinate to the transfer of electrons to ubiquinone"
+50,1776155_at,,RNR4,"Ribonucleotide-diphosphate reductase (RNR), small subunit; the RNR complex catalyzes the rate-limiting step in dNTP synthesis and is regulated by DNA replication and DNA damage checkpoint pathways via localization of the small subunits"
+51,1774675_at,,RNR2,"Ribonucleotide-diphosphate reductase (RNR), small subunit; the RNR complex catalyzes the rate-limiting step in dNTP synthesis and is regulated by DNA replication and DNA damage checkpoint pathways via localization of the small subunits"
+52,1774425_at,,GLN1,"Glutamine synthetase (GS), synthesizes glutamine from glutamate and ammonia; with Glt1p, forms the secondary pathway for glutamate biosynthesis from ammonia; expression regulated by nitrogen source and by amino acid limitation"
+53,1774276_at,,SSB2,"Cytoplasmic ATPase that is a ribosome-associated molecular chaperone, functions with J-protein partner Zuo1p; may be involved in the folding of newly-synthesized polypeptide chains; member of the HSP70 family; homolog of SSB1"
+54,1774129_at,,0,0
+55,1774081_at,,MDH2,"Cytoplasmic malate dehydrogenase, one of three isozymes that catalyze interconversion of malate and oxaloacetate; involved in the glyoxylate cycle and gluconeogenesis during growth on two-carbon compounds; interacts with Pck1p and Fbp1"
+56,1773780_at,,GSC2,"Catalytic subunit of 1,3-beta-glucan synthase, involved in formation of the inner layer of the spore wall; activity positively regulated by Rho1p and negatively by Smk1p; has similarity to an alternate catalytic subunit, Fks1p (Gsc1p)"
+57,1771792_at,,YPS1,"Aspartic protease, attached to the plasma membrane via a glycosylphosphatidylinositol (GPI) anchor"
+58,1771292_at,,HTB1,"Histone H2B, core histone protein required for chromatin assembly and chromosome function; nearly identical to HTB2; Rad6p-Bre1p-Lge1p mediated ubiquitination regulates transcriptional activation, meiotic DSB formation and H3 methylation"
+59,1769968_at,,GDB1,"Glycogen debranching enzyme containing glucanotranferase and alpha-1,6-amyloglucosidase activities, required for glycogen degradation; phosphorylated in mitochondria"
+60,1780041_at,,EGD1,"Subunit beta1 of the nascent polypeptide-associated complex (NAC) involved in protein targeting, associated with cytoplasmic ribosomes; enhances DNA binding of the Gal4p activator; homolog of human BTF3b"
+61,1777033_at,,FIT3,"Mannoprotein that is incorporated into the cell wall via a glycosylphosphatidylinositol (GPI) anchor, involved in the retention of siderophore-iron in the cell wall"
+62,1774671_at,,PET10,Protein of unknown function that co-purifies with lipid particles; expression pattern suggests a role in respiratory growth; computational analysis of large-scale protein-protein interaction data suggests a role in ATP/ADP exchange
+63,1779093_at,,ZRT3,"Vacuolar membrane zinc transporter, transports zinc from storage in the vacuole to the cytoplasm when needed; transcription is induced under conditions of zinc deficiency"
+64,1776583_at,,FIT2,"Mannoprotein that is incorporated into the cell wall via a glycosylphosphatidylinositol (GPI) anchor, involved in the retention of siderophore-iron in the cell wall"
+65,1775859_at,,SAH1,"S-adenosyl-L-homocysteine hydrolase, catabolizes S-adenosyl-L-homocysteine which is formed after donation of the activated methyl group of S-adenosyl-L-methionine (AdoMet) to an acceptor"
+66,1775057_at,,MF(ALPHA)1,"Mating pheromone alpha-factor, made by alpha cells; interacts with mating type a cells to induce cell cycle arrest and other responses leading to mating; also encoded by MF(ALPHA)2, although MF(ALPHA)1 produces most alpha-factor"
+67,1774137_at,,CYC7,"Cytochrome c isoform 2, expressed under hypoxic conditions; electron carrier of the mitochondrial intermembrane space that transfers electrons from ubiquinone-cytochrome c oxidoreductase to cytochrome c oxidase during cellular respiration"
+68,1773750_at,,ILV5,"Acetohydroxyacid reductoisomerase, mitochondrial protein involved in branched-chain amino acid biosynthesis, also required for maintenance of wild-type mitochondrial DNA and found in mitochondrial nucleoids"
+69,1773284_at,,SAG1,"Alpha-agglutinin of alpha-cells, binds to Aga1p during agglutination, N-terminal half is homologous to the immunoglobulin superfamily and contains binding site for a-agglutinin, C-terminal half is highly glycosylated and contains GPI anchor"
+70,1778706_at,,ATO2,"Putative transmembrane protein involved in export of ammonia, a starvation signal that promotes cell death in aging colonies; phosphorylated in mitochondria; member of the TC 9.B.33 YaaH family; homolog of Ady2p and Y. lipolytica Gpr1p"
+71,1777630_at,,URA1,"Dihydroorotate dehydrogenase, catalyzes the fourth enzymatic step in the de novo biosynthesis of pyrimidines, converting dihydroorotic acid into orotic acid"
+72,1775846_at,,SCS7,"Sphingolipid alpha-hydroxylase, functions in the alpha-hydroxylation of sphingolipid-associated very long chain fatty acids, has both cytochrome b5-like and hydroxylase/desaturase domains, not essential for growth"
+73,1772791_at,,CCP1,"Mitochondrial cytochrome-c peroxidase; degrades reactive oxygen species in mitochondria, involved in the response to oxidative stress"
+74,1770167_at,,HXK2,Hexokinase isoenzyme 2 that catalyzes phosphorylation of glucose in the cytosol; predominant hexokinase during growth on glucose; functions in the nucleus to repress expression of HXK1 and GLK1 and to induce expression of its own gene
+75,1778973_at,,PDR15,"Plasma membrane ATP binding cassette (ABC) transporter, multidrug transporter and general stress response factor implicated in cellular detoxification; regulated by Pdr1p, Pdr3p and Pdr8p; promoter contains a PDR responsive element"
+76,1778503_at,,TKL1,"Transketolase, similar to Tkl2p; catalyzes conversion of xylulose-5-phosphate and ribose-5-phosphate to sedoheptulose-7-phosphate and glyceraldehyde-3-phosphate in the pentose phosphate pathway; needed for synthesis of aromatic amino acids"
+77,1778142_at,,TKL2,"Transketolase, similar to Tkl1p; catalyzes conversion of xylulose-5-phosphate and ribose-5-phosphate to sedoheptulose-7-phosphate and glyceraldehyde-3-phosphate in the pentose phosphate pathway; needed for synthesis of aromatic amino acids"
+78,1777714_at,,DIP5,"Dicarboxylic amino acid permease, mediates high-affinity and high-capacity transport of L-glutamate and L-aspartate; also a transporter for Gln, Asn, Ser, Ala, and Gly"
+79,1774022_at,,ENB1,"Endosomal ferric enterobactin transporter, expressed under conditions of iron deprivation; member of the major facilitator superfamily; expression is regulated by Rcs1p and affected by chloroquine treatment"
+80,1771824_at,,ICY2,Protein of unknown function; mobilized into polysomes upon a shift from a fermentable to nonfermentable carbon source; potential Cdc28p substrate
+81,1770120_at,,0,0
+82,1778673_at,,DED81,"Cytosolic asparaginyl-tRNA synthetase, required for protein synthesis, catalyzes the specific attachment of asparagine to its cognate tRNA"
+83,1773089_at,,FET3,"Ferro-O2-oxidoreductase required for high-affinity iron uptake and involved in mediating resistance to copper ion toxicity, belongs to class of integral membrane multicopper oxidases"
+84,1778141_at,,AGP1,"Low-affinity amino acid permease with broad substrate range, involved in uptake of asparagine, glutamine, and other amino acids; expression is regulated by the SPS plasma membrane amino acid sensor system (Ssy1p-Ptr3p-Ssy5p)"
+85,1774824_at,,0,0
+86,1769955_at,,CTT1,"Cytosolic catalase T, has a role in protection from oxidative damage by hydrogen peroxide"
+87,1779961_at,,ERG5,"C-22 sterol desaturase, a cytochrome P450 enzyme that catalyzes the formation of the C-22(23) double bond in the sterol side chain in ergosterol biosynthesis; may be a target of azole antifungal drugs"
+88,1773993_at,,SOD2,"Mitochondrial superoxide dismutase, protects cells against oxygen toxicity; phosphorylated"
+89,1779478_at,,TRP5,"Tryptophan synthase involved in tryptophan biosynthesis, regulated by the general control system of amino acid biosynthesis"
+90,1778479_at,,CHA1,"Catabolic L-serine (L-threonine) deaminase, catalyzes the degradation of both L-serine and L-threonine; required to use serine or threonine as the sole nitrogen source, transcriptionally induced by serine and threonine"
+91,1779782_at,,RPS12,Protein component of the small (40S) ribosomal subunit; has similarity to rat ribosomal protein S12
+92,1772558_at,,TIP1,Major cell wall mannoprotein with possible lipase activity; transcription is induced by heat- and cold-shock; member of the Srp1p/Tip1p family of serine-alanine-rich proteins
+93,1775421_at,,0,0
+94,1770884_s_at,,SSB1 /// SSB2,"Cytoplasmic ATPase that is a ribosome-associated molecular chaperone, functions with J-protein partner Zuo1p; may be involved in folding of newly-made polypeptide chains; member of the HSP70 family; interacts with phosphatase subunit Reg1p /// Cytoplasmic ATPase that is a ribosome-associated molecular chaperone, functions with J-protein partner Zuo1p; may be involved in the folding of newly-synthesized polypeptide chains; member of the HSP70 family; homolog of SSB1"
+95,1779979_at,,ZRT1,"High-affinity zinc transporter of the plasma membrane, responsible for the majority of zinc uptake; transcription is induced under low-zinc conditions by the Zap1p transcription factor"
+96,1779628_at,,MRH1,"Protein that localizes primarily to the plasma membrane, also found at the nuclear envelope; the authentic, non-tagged protein is detected in mitochondria in a phosphorylated state; has similarity to Hsp30p and Yro2p"
+97,1773515_at,,CIT2,"Citrate synthase, catalyzes the condensation of acetyl coenzyme A and oxaloacetate to form citrate, peroxisomal isozyme involved in glyoxylate cycle; expression is controlled by Rtg1p and Rtg2p transcription factors"
+98,1770682_at,,HXT3,"Low affinity glucose transporter of the major facilitator superfamily, expression is induced in low or high glucose conditions"
+99,1777237_at,,PDC1,"Major of three pyruvate decarboxylase isozymes, key enzyme in alcoholic fermentation, decarboxylates pyruvate to acetaldehyde; subject to glucose-, ethanol-, and autoregulation; involved in amino acid catabolism"
