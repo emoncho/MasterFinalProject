@@ -9,7 +9,7 @@ import itertools
 from sklearn.preprocessing import Normalizer
 import os
 
-filefast100 = os.path.abspath('Fasting/100genesID.csv')   #ID from 100 first gens
+filefast100 = os.path.abspath('Fasting/FA100genesID.csv')   #ID from 100 first gens
 fast100 = pandas.read_csv(filefast100, header=None, index_col=0)
     
 filefast = os.path.abspath("Fasting/FAexpressiondata.csv")             #genetic expression info all the genes
